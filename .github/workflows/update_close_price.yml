@@ -34,8 +34,8 @@ jobs:
     - name: Commit and push changes
       if: success()  # Only run this step if the previous steps were successful
       run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git config --global user.name 'efshal'
+        git config --global user.email 'efshalahmad@gmail.com'
         git add day_raw/*.pkl
         git commit -m 'Add latest .pkl file'
         git push
