@@ -3,7 +3,7 @@ name: Update Close Price
 on:
   schedule:
     # - cron: '0 23 57 * 1-5'  # Runs at 7 PM UTC from Monday to Friday
-    - cron: '11 0 * * *'  # Runs at 12:11 AM UTC every day
+    - cron: '14 19 * * *'  # Runs at 12:11 AM UTC every day
   workflow_dispatch:  # Allows manual triggering of the workflow
 
 permissions:
