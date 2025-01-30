@@ -27,7 +27,7 @@ jobs:
         pip install requests pandas
 
     - name: Run update script
-      run: python your_script.py
+      run: python daily_close_download.py
       env:
         DB_PATH: close_price_and_volume_daily.db
 
