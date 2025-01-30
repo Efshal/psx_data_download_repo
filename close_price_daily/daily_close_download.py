@@ -85,6 +85,7 @@ def fetch_save_close_price_table(price, volume):
     
     # Download the file
     path_save = os.path.join('day_raw', "file.zip")
+    os.makedirs('day_raw', exist_ok=True)
     response = requests.get(dated_fetch_url)
     with open(path_save, "wb") as file:
         file.write(response.content)
